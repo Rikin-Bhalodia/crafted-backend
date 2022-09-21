@@ -16,9 +16,9 @@ const razorpay = new Razorpay({
   key_secret: "ShJKDYCKXN8kHD6305dovOjU",
 });
 
-app.get("/logo.svg", (req, res) => {
-  res.sendFile(path.join(__dirname, "logo.svg"));
-});
+// app.get("/logo.svg", (req, res) => {
+//   res.sendFile(path.join(__dirname, "logo.svg"));
+// });
 
 app.post("/verification", (req, res) => {
   const secret = "12345678";
