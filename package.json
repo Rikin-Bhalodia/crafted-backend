@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "nodejs": "nodemon nodejs-payment/index.js",
-    "start": "node nodejs-payment/index.js"
+    "nodejs": "nodemon index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "axios": "^0.27.2",
