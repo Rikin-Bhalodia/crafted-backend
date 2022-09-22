@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const path = require("path");
 const Razorpay = require("razorpay");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -103,6 +102,6 @@ app.get("/verification-user", async (req, res) => {
   }
 });
 
-app.listen(1337, () => {
-  console.log("Listening on 1337");
+app.listen(3000, () => {
+  console.log("Listening on 3000");
 });
