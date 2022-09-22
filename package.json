@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "nodejs": "nodemon nodejs-payment/index.js",
-    "start": "nodejs-payment/inde.js start"
+    "start": "nodejs-payment/index.js start"
   },
   "dependencies": {
     "axios": "^0.27.2",
