@@ -88,6 +88,7 @@ app.get("/order-details", async (req, res) => {
     const data = await orderDataSchema.find();
     res.send(data).status(200);
   } catch (error) {
+    console.log(error);
     res.status(500).json({ message: error.message });
   }
 });
