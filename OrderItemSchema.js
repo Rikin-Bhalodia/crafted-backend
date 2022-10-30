@@ -14,7 +14,7 @@ const orderDataSchema = new mongoose.Schema({
       sale_price: { type: String },
       size: { type: String },
       sku: { type: String },
-      tag: { type: String },
+      tag: [{ type: String }],
       totalUserItem: { type: Number },
     },
   ],

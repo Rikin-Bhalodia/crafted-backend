@@ -5,6 +5,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const orderSchema = require("./schema");
 const orderDataSchema = require("./OrderItemSchema");
+const ig = require("instagram-scraping");
 
 require("./db");
 app.use(cors());
@@ -99,6 +100,15 @@ app.get("/verification-user", async (req, res) => {
     res.send(data).status(200);
   } catch (error) {
     res.status(500).json({ message: error.message });
+  }
+});
+
+app.get("/get-crafted-profile", async (req, res) => {
+  try {
+    const data = await ig.scrapeUserPage("rikin_9504");
+    console.dir(data, "data");
+  } catch (error) {
+    console.log(error);
   }
 });
 
